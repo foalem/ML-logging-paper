@@ -2,7 +2,6 @@ import ast
 import pandas as pd
 import os
 from collections import deque
-import csv
 
 ROOD_DIR = os.path.abspath(os.getcwd())
 PROJECT_DIR = r'C:\Users\fpatr\PycharmProjects\GitHub\data\outputs\clones'
@@ -102,9 +101,6 @@ def main():
     final_data['statement'] = state_log
     final_data['occurrence'] = occurance
     final_data.to_csv(OUT_TARGET + '/logging_.csv', mode='w', index=False, sep=',')
-    # with open(OUT_TARGET + '/logging_.csv', 'w', newline='') as f:
-    #     writer = csv.writer(f)
-    #     writer.writerow(final_data)
 
 
 if __name__ == '__main__':

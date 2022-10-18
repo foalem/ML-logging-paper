@@ -95,14 +95,6 @@ def main():
                         with open(OUT_TARGET + '/logging_statement5.csv', 'a', newline='') as f:
                             writer = csv.writer(f)
                             writer.writerow(data)
-                    # print(log)
-    #                 logging_call.append(log)
-    #     print(logging_call)
-    #     res = dict(zip(repeat(project_name), logging_call))
-    #     data.append(res)
-    #     print(data)
-    # df = pd.DataFrame.from_dict(data)
-    # df.to_csv(OUT_TARGET+'/logging_statement.csv', index=False, header=False)
 
 
 if __name__ == '__main__':
